@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function add(){
+let num1=document.getElementById("op1").value;
+let num2=document.getElementById("op2").value; 
+let res=parseInt(num1)+parseInt(num2);
+alert("addition of " +num1+ " and " +num2+ " is " +res);  
+}
+function sub()
+{
+let num1=document.getElementById("sq1").value;
+let num2=document.getElementById("sq2").value;
+let r1=parseInt(num1)-parseInt(num2);
+alert("subtraction of " +num1+ " and " +num2+ " is " +r1); 
+}
+function mul()
+{
+let n1=document.getElementById("m1").value;
+let n2=document.getElementById("m2").value;
+let r=parseInt(n1)*parseInt(n2);
+alert("Multiplication is " +n1+ " and " +n2+ " is " +r); 
+}
+function div()
+{
+let n=document.getElementById("div1").value;
+let n1=document.getElementById("div2").value;
+let res=parseInt(n)/parseInt(n1);
+alert("Division of " +n+ " and " +n1+ " is " +res);
+}
+function rem()
+{
+let n=document.getElementById("rem1").value;
+let n1=document.getElementById("rem2").value;
+let res=parseInt(n)%parseInt(n1);
+alert("reminder of " +n+ " and " +n1+ " is " +res); 
+}
+function greater()
+{
+let num=document.getElementById("g1").value;
+let num2=document.getElementById("g2").value;
+if(parseInt(num)>parseInt(num2))
+{
+alert(+num+ " is greater than " +num2 );
+}
+else
+{
+alert(+num+ " is lesser than " +num2 );
+}
+}
+function odd()
+{
+let num1=document.getElementById("a1").value;
+if(parseInt(num1)%2==1)
+{
+alert(+num1+ " is odd ");
+}
+else
+{
+alert(+num1+ " is even ");
+}
+}
+function prime() 
+{
+let num1=parseInt(document.getElementById("q1").value);
+if(num1<=1)
+{
+alert(+num1+ " is not a prime number");
+return;
+}
+let isprime=true;
+for(let i=2;i<Math.sqrt(num1);i++)
+{
+if(num1%i==0)
+{
+isprime=false;
+break;
+}
+}
+if(isprime)
+{
+alert(+num1+ " is a prime number");
+}
+else
+{
+alert(+num1+ " is not a prime number");
+}
+}
+</script>
+<body>
+<input type="number" id="op1"/>
+<input type="number" id="op2"/>
+<input type="button" value="Addition" onclick="add()"/> 
+<hr>
+<input type="number" id="sq1"/>
+<input type="number" id="sq2"/>
+<input type="button" value="Subtraction" onclick="sub()"/> 
+<hr>
+<input type="number" id="m1"/>
+<input type="number" id="m2"/>
+<input type="button" value="Multiplication" onclick="mul()"/>
+<hr>
+<input type="number" id="div1"/>
+<input type="number" id="div2"/>
+<input type="button" value="Division" onclick="div()"/>
+<hr>
+<input type="number" id="rem1"/>
+<input type="number" id="rem2"/>
+<input type="button" value="Remainder" onclick="rem()"/> 
+<hr>
+<input type="number" id="g1"/>
+<input type="number" id="g2"/>
+<input type="button" value="Greater or lesser" onclick="greater()"/>
+<hr>
+<input type="number" id="a1"/>
+<input type="button" value="Even or Odd" onclick="odd()"/>
+<hr>
+<input type="number" id="q1"/>
+<input type="button" value="Prime or Not" onclick="prime()"/>
+<hr>
+</body>
+</head>
+</html>
+
