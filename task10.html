@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let str=()=>
+        {
+            let str1=document.getElementById("str1").value;
+            let str2=str1.split("").reverse().join("");
+            if(str1==str2){
+                alert("it is a palindrome");
+            }
+            else{
+                alert("it is not a palindrome");
+            }
+        
+        }
+        let maximum=(...args)=>{
+
+    
+            let nums=document.getElementById("num").value;
+            let arr=nums.split(",").map(Number);
+            let max=Math.max(...arr);
+            let min=Math.min(...arr);
+            console.log(max)
+            console.log(min)
+            alert("maximum value is " +max);
+            alert("minimum value is " +min);
+        }
+        let student=(...args)=>{
+            let input=document.getElementById("num1").value;
+            let arr=input.split(",").map(Number)
+            for(let i=0;i<arr.length;i++){
+                arr[i]+=20;
+            }
+            alert("The updation is "+arr)
+        
+        
+        }
+        
+        </script>
+
+    </head>
+<body>
+    <input type="text" id="str1">
+    <input type="button" value="Palindrome" onclick="str()">
+    <hr>
+    <input type="text" id="num">
+    <input type="button" value="Max and Min" onclick="maximum()">
+    <hr>
+    <input type="text" id="num1">
+    <input type="button" value="Add 20" onclick="student()">
+</body>
+</html>
