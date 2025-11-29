@@ -5,6 +5,12 @@
             let d1=document.getElementById("div1");
             d1.innerHTML+="hello"
         }
+        let colour=()=>{
+            let d1=document.getElementsByTagName("div");
+            for(let i=0;i<d1.length;i++){
+                d1[i].style.color="red";
+            }
+        }
         </script>
         <body>
          <div id="div1">
@@ -17,5 +23,6 @@
             this is div3
         </div>
         <input type="button" value="append" onclick="append()">
+        <input type="button" value="colour" onclick="colour()">    
     </body>
 </html>
