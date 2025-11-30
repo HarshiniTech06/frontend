@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+            .display1{
+                color:green;
+            }
+            .display2{
+                color:green;
+            }
+        </style>
+    </head>
         <script>
         let append=()=>{
             let d1=document.getElementById("div1");
@@ -11,18 +21,28 @@
                 d1[i].style.color="red";
             }
         }
+        let bluecolour=()=>{
+            let a1=document.getElementsByClassName("display1");
+            for(let i=0;i<a1.length;i++){
+                a1[i].style.color="blue";
+            }
+        }
         </script>
         <body>
-         <div id="div1">
+         <div id="div1" class="display1" >
             this is div1
         </div>
-        <div id="div2">
+        <div id="div2" class="display1">
             this is div2
         </div>
-        <div id="div3">
+        <div id="div3" class="display2">
             this is div3
         </div>
         <input type="button" value="append" onclick="append()">
-        <input type="button" value="colour" onclick="colour()">    
+        <hr>
+        <input type="button" value="colour" onclick="colour()">  
+        <hr>
+        <input type="button" value="bluecolor" onclick="bluecolour()" > 
+        <hr>
     </body>
 </html>
