@@ -1,24 +1,31 @@
 
     .navbar{
+
         display: flex;
         justify-content: space-between;
 
     }
     .logo{
+        margin-left: 20px;
+        margin-top: 20px;
         font-size:xx-large;
         text-align:left;
         color:black;
         font-family: sans-serif;
     }
     .menu{
-        font-size:large;
+        margin-top: 20px;
         display:flex;
         gap:20px;
+        font-size: 14px;
+        font-family: "DM Sans:Bold", sans-serif;
     }
     .menu a{
         color: black;
     }
     .learn-btn{
+        margin-top: 20px;
+        margin-right: 20px;
         border-radius: 40px;
         background-color:#485C11;
         color:white;
@@ -26,8 +33,13 @@
         height: 38px;
     }
     .para{
-        font-size:xx-large;
-        text-align:center;
+    font-size: 90px;
+    font-family: "Crimson Text:Regular", sans-serif;
+    text-align:center;
+    }
+.para h1{
+        font-size: 120px;
+        font-family: "Crimson Text:Regular", sans-serif;
     }
     .img img{
         display: block;
